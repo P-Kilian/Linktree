@@ -1,0 +1,36 @@
+* {
+    outline: #821131 solid 1px;
+}
+
+:root {
+    --Yellow: #FABC3F;
+    --Orange: #E85C0D;
+    --Red: #C7253E;
+    --Maroon: #821131;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    max-width: 530px;
+}
+
+h1 {
+    color: var(--Orange);
+}
+
+body {
+    margin: auto;
+}
