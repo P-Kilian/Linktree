@@ -1,12 +1,11 @@
-* {
-    outline: #821131 solid 1px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --Yellow: #FABC3F;
-    --Orange: #E85C0D;
-    --Red: #C7253E;
-    --Maroon: #821131;
+    --floral-white: 255, 252, 242;
+    --timberwolf: 204, 197, 185;
+    --black-olive: 64, 61, 57;
+    --eerie-black: 37, 36, 34;
+    --flame: 235, 94, 40;
 }
 
 body,
@@ -14,23 +13,90 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(12, 12, 12);
+}
+
+h1,
+h2 {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 5px 5px 5px black;
+}
+
+h1 {
+    background-color: rgba(var(--eerie-black), 0.4);
+    border-radius: 1em;
+    border: 0.15rem solid black;
+    margin: 1em auto;
+    padding: .5rem;
+    font-size: 1rem;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
 }
 
-main {
-    max-width: 530px;
+ul {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0;
 }
 
-h1 {
-    color: var(--Orange);
+ul>li {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(var(--flame), 0.5);
+    border-radius: 1em;
+    backdrop-filter: blur(5px) saturate(160%) contrast(160%);
+    -webkit-backdrop-filter: blur(5px) saturate(160%) contrast(160%);
+    margin: 1rem auto;
+    gap: 0.5em;
+    min-width: 15rem;
+    box-shadow: rgba(31, 31, 31, 0.5) 0px 4px 10px 0px;
 }
 
-body {
-    margin: auto;
+li:hover {
+    background-color: rgba(var(--floral-white), 0.5);
+}
+
+ul>li>a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+a {
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin: 50px auto;
+    border-radius: 5rem;
+    border: 1px solid rgb(var(--floral-white));
+    background-image: url("./images/wp8521301.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
